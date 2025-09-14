@@ -1,8 +1,13 @@
-from model.resume_analysis.resume_basic_analysis import CandidateProfile
-from service.chat_completion.chat_completion_service import get_chat_completion_response, get_chat_completion_json
+from model.resume_analysis.resume_basic_analysis import CandidateBasicAnalysis
+from service.chat_completion.chat_completion_service import get_chat_completion_json
+from service.resume_analysis.basic_analysis.resume_basic_company_analysis_service import extract_job_requirements
 
 
-async def basic_resume_analysis(resume_text: str, job_requirements: str) -> CandidateProfile:
+async def basic_resume_analysis(resume_text: str, application_link: str) -> CandidateBasicAnalysis:
+
+    job_requirements = ""
+    if application_link:
+        job_requirements = await extract_job_requirements(application_link)
 
     system_prompt = """
     You are an expert HR manager. Your primary task is to analyze a candidate's resume in the context of a specific job description.
@@ -84,5 +89,5 @@ async def basic_resume_analysis(resume_text: str, job_requirements: str) -> Cand
     return await get_chat_completion_json(
         prompt=user_prompt,
         system_prompt=system_prompt,
-        response_model=CandidateProfile
+        response_model=CandidateBasicAnalysis
     )

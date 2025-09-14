@@ -33,7 +33,6 @@ class Education(BaseModel):
 
 
 class ResumeData(BaseModel):
-    # Field(default_factory=...)를 사용해 중첩 모델의 기본 객체를 생성
     contact_info: Optional[ContactInfo] = Field(default_factory=ContactInfo)
     summary: Optional[str] = ""
     work_experience: List[WorkExperience] = []
@@ -49,6 +48,6 @@ class JobFitAnalysis(BaseModel):
     weaknesses: List[str] = []
 
 
-class CandidateProfile(BaseModel):
+class CandidateBasicAnalysis(BaseModel):
     resume_data: Optional[ResumeData] = Field(default_factory=ResumeData)
     job_fit_analysis: Optional[JobFitAnalysis] = Field(default_factory=JobFitAnalysis)

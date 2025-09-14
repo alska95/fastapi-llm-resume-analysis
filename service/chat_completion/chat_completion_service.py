@@ -5,7 +5,6 @@ from fastapi import Depends, Query
 from openai import AsyncOpenAI
 from pydantic import BaseModel, TypeAdapter
 
-# 제네릭 타입 T를 정의합니다.
 T = TypeVar("T", bound=BaseModel)
 api_key = os.getenv("chat_gpt_api_key_1")
 
@@ -19,7 +18,7 @@ async def get_chat_completion_response(
         system_prompt: str = "You are a helpful assistant."
 ) -> str:
     openai_client = get_openai_client()
-    print(f"### LLM request ### : {prompt} \n ### LLM request ### ")
+    print(f"### LLM request ### : {prompt[:100]} \n ^^^ LLM request ^^^ ")
 
     try:
         response = await openai_client.chat.completions.create(
@@ -44,7 +43,7 @@ async def get_chat_completion_json(
         system_prompt: str = "You are a helpful assistant that responds in JSON format."
 ) -> T:
     openai_client = get_openai_client()
-    print(f"### LLM request ### : {prompt} \n ### LLM request ### ")
+    print(f"### LLM request ### : {prompt[:100]} \n ^^^ LLM request ^^^ ")
 
     try:
         response = await openai_client.chat.completions.create(

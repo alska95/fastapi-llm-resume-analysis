@@ -5,23 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9929f904-fec7-4b88-98df-3a4f1e5539f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/fastapi-resume-analysis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/resume_analysis/resume_basic_analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/analyze_resume_router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/chat_completion_router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/health_check_router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/chat_completion/chat_completion_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/resume_analysis/resume_application_company_analysis_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/resume_analysis/resume_basic_analysis_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/resume_analysis/resume_core_analysis_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/resume_analysis/resume_git_crawling_analysis_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/pdf_to_text_converter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/resume_analysis/resume_analysis_request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/resume_analysis/resume_composite_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/resume_analysis/resume_git_crawling_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/resume_analysis/git_crawling_analysis/resume_git_core_analysis_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/resume_analysis/git_crawling_analysis/resume_git_fetch_repo_content_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/resume_analysis/git_crawling_analysis/resume_git_single_repo_analysis_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/resume_analysis/resume_composite_analysis_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/resume_analysis/resume_basic_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/resume_analysis/resume_basic_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/analyze_resume_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/router/analyze_resume_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/chat_completion/chat_completion_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/chat_completion/chat_completion_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/resume_analysis/resume_application_company_analysis_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/resume_analysis/basic_analysis/resume_basic_company_analysis_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/resume_analysis/resume_basic_analysis_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/resume_analysis/basic_analysis/resume_basic_core_analysis_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/resume_analysis/resume_core_analysis_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/resume_analysis/resume_core_analysis_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/resume_analysis/resume_git_crawling_analysis_service.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,17 +52,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/user/Desktop/git/fastapi-resume-analysis/service/resume_analysis"
+    "last_opened_file_path": "/Users/user/Desktop/git/fastapi-resume-analysis/service/resume_analysis/git_crawling_analysis"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service/resume_analysis/git_crawling_analysis" />
       <recent name="$PROJECT_DIR$/service/resume_analysis" />
       <recent name="$PROJECT_DIR$/router" />
       <recent name="$PROJECT_DIR$/service" />
       <recent name="$PROJECT_DIR$/controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service/resume_analysis/basic_analysis" />
+      <recent name="$PROJECT_DIR$/service/resume_analysis/git_crawling_analysis" />
       <recent name="$PROJECT_DIR$/service/chatcompletion" />
       <recent name="$PROJECT_DIR$/service/resume" />
     </key>
@@ -109,5 +111,16 @@
       <updated>1757070305261</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

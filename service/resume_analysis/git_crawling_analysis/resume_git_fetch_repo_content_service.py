@@ -1,16 +1,33 @@
 import asyncio
+import base64
 
 import httpx
 
 
-async def get_file_content_async(client: httpx.AsyncClient, owner: str, repo_name: str, file_path: str) -> str:
-    content_url = f"https://api.github.com/repos/{owner}/{repo_name}/contents/{file_path}"
+async def get_file_content_async(client: httpx.AsyncClient, owner: str, repo: str, path: str) -> str:
+    api_url = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}"
+
     try:
-        response = await client.get(content_url)
+        response = await client.get(api_url)
         response.raise_for_status()
-        return response.text
-    except httpx.RequestError as e:
-        print(f"ERROR: Failed to fetch content for {file_path}: {e}")
+
+        file_data = response.json()
+
+        if 'content' in file_data and file_data.get('encoding') == 'base64':
+            encoded_content = file_data['content']
+
+            decoded_bytes = base64.b64decode(encoded_content)
+
+            return decoded_bytes.decode('utf-8')
+        else:
+            print(f"Warning: No 'content' or unsupported encoding for file {path}")
+            return None
+
+    except httpx.HTTPStatusError as e:
+        print(f"Error fetching file content for '{path}': {e.response.status_code} - {e.response.text}")
+        return None
+    except Exception as e:
+        print(f"An unexpected error occurred while fetching '{path}': {e}")
         return None
 
 

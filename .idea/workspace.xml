@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9929f904-fec7-4b88-98df-3a4f1e5539f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/resume_analysis/resume_analysis_request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/resume_analysis/resume_composite_analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/resume_analysis/resume_git_crawling_analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/resume_analysis/git_crawling_analysis/resume_git_core_analysis_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/resume_analysis/git_crawling_analysis/resume_git_fetch_repo_content_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/resume_analysis/git_crawling_analysis/resume_git_single_repo_analysis_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/resume_analysis/resume_composite_analysis_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/resume_analysis/resume_basic_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/resume_analysis/resume_basic_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/analyze_resume_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/router/analyze_resume_router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/chat_completion/chat_completion_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/chat_completion/chat_completion_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/resume_analysis/resume_application_company_analysis_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/resume_analysis/basic_analysis/resume_basic_company_analysis_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/resume_analysis/resume_basic_analysis_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/resume_analysis/basic_analysis/resume_basic_core_analysis_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/resume_analysis/resume_core_analysis_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/resume_analysis/resume_core_analysis_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/resume_analysis/resume_git_crawling_analysis_service.py" beforeDir="false" />
-    </list>
+    <list default="true" id="9929f904-fec7-4b88-98df-3a4f1e5539f7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,24 +20,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="32HGuHaVYhWDuP7aFa8GqiDQJgW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/user/Desktop/git/fastapi-resume-analysis/service/resume_analysis/git_crawling_analysis"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user/Desktop/git/fastapi-resume-analysis/service/resume_analysis/git_crawling_analysis&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/service/resume_analysis/git_crawling_analysis" />
@@ -122,5 +105,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ㅁㄴㅇ" />
+    <option name="LAST_COMMIT_MESSAGE" value="ㅁㄴㅇ" />
   </component>
 </project>
